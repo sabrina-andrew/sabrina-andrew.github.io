@@ -14,7 +14,9 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
+
 }
+
 
 header,
 main,
@@ -26,13 +28,13 @@ footer{
 html{
     font-size: 16px;
     margin-top: 3em;
+    scroll-behavior: smooth;
    }
 h1, h2, h3{
     color: white;
 }
 header{
     padding-top: 8em;
-    
     font-size: 1em;
 }
 h1{
@@ -54,6 +56,7 @@ span{
     height: auto;
     min-height: 100% !important;
     
+    
 }
 #sectionSpan p{
     padding-left: 25px;
@@ -69,14 +72,12 @@ nav{
     width: 100%;
     display: flex;
     flex-flow:row;
-    background: #2c2416;
+    background: #CC6600;
 }
 nav a{
-    display: flex;
     color:white;
     text-decoration: none;
     padding: 2em;
-    justify-content: flex-end;
     font-size: 1.5em;
 }
 #name{
@@ -88,7 +89,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: rgb(54, 46, 46);
+    background-color:#cc6600;
+    opacity: 
    }
 section{
     margin: 1em;
@@ -125,20 +127,42 @@ section ul{
     background: #2c2416;
     /*padding: 1em;*/
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-column-gap: 1em;
 }
-
-#aboutMe p{
-    padding: 1em;
-    margin: 0;
-    padding-top: .5em;
-}
-#aboutMe h4{
-    margin: 0;
-    padding-left: 15px;
-    padding-bottom: 5px;
+#aboutMe h2{
+    display: grid;
+    margin: 2%;
+    width: 200px;
+    height: 40px;
+    grid-column: 1;
 }
 #aboutMe img{
+    display: grid;
     width: 300px;height:400px;
+    margin: 10%;
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+#aboutMe h4{
+    display: grid;
+    margin: ;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    grid-column: 2;
+    grid-row: 2;
+}
+   #aboutMe p{
+    display: grid;
+    padding: 2em;
+    margin: 0;
+    padding-top: .5em;
+    grid-column: 2;
+    grid-row: 2;
+    
 }
 #getInTouch{
     background-color: #2c2416;
