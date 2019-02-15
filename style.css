@@ -135,9 +135,11 @@ section ul{
 #aboutMe h2{
     display: grid;
     margin: 2%;
-    width: 200px;
-    height: 40px;
-    grid-column: 1;
+    
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-self: center;
+    
 }
 #aboutMe img{
     display: grid;
@@ -149,7 +151,7 @@ section ul{
 }
 #aboutMe h4{
     display: grid;
-    margin: ;
+    
     padding-left: 15px;
     padding-bottom: 5px;
     grid-column: 2;
