@@ -5,8 +5,6 @@
     margin: 0;
     padding: 0;
     color: #ffffcc;
-      
-    
 }
 body {
 min-height: 100%;
@@ -16,8 +14,6 @@ background-position: center;
 background-size: cover;
 font-size: 17px;
 }
-
-
 header,
 main,
 footer{
@@ -28,7 +24,6 @@ header{
     padding: 1em;
     margin-top: 25px;
 }
-
 html{
     font-size: 16px;
     margin-left: 17%;
@@ -39,13 +34,11 @@ h1, h2, h3{
 }
 header{
     margin-top: 3em;
-    font-size: 1em;
-    
+    font-size: 1em;   
 }
 h1{
     font-size: 3em;
 }
-
 span{
     display: flex;
     font-size: 1.5em;
@@ -68,7 +61,6 @@ span{
     padding-bottom: 10px;
     margin: 0;
 }
-
 nav{
     position: fixed;
     top: 0;
@@ -77,7 +69,6 @@ nav{
     height: 100%;
     display: flex;
     flex-flow:column;
-    /*background: #CC6600;*/
     background: #601407;
     
 }
@@ -99,50 +90,135 @@ nav a{
 }
 
 nav a:hover{
-    /*background-color:#cc6600;*/
-    opacity: .25;
-   
+   opacity: .25;   
 }
-
 section{
     margin: 1em;
-    /*padding-top: 3em;*/
     min-height: 20em;
 }
-section >p{
+section p{
     margin: 1em 0;
 }
-section ul{
-    padding-left: 1.5em;
-}
+* {box-sizing:border-box}
 
-#myProjects{
-   display: grid;
-   grid-template-rows: 2;
-   background: #2c2416;
-   padding-left: 2%;
-   padding-top: 1%;
-}
-#projects{
+.slideshow-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-  }
-  #myProjects h2{
-    display: grid;
-    grid-row: 1;
-    grid-column: 1;
-}
-#projects article{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
     background: #2c2416;
-    padding: 1em;
+    padding: 2em;
+}
+.slideshow-container h2{
+    grid-column: 1 / span 3;
 }
 
-#projects article img{
-    width: 224px;
-    height: 126.28px;
+.mySlides.fade{
+    /*display: grid;
+    grid-row: 2;
+    grid-column: 2;  */
+    padding: 1em;
+    max-width: 100%;
+    float: left;
+    list-style: none;
+}
+.slideshow-container img{
     border: 1px solid #ffffcc;
 }
+
+.dots{
+    grid-column: 1 / span 3;
+}
+
+.mySlides {
+  display: none;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffcc;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    /*display: grid;
+    grid-row: 2;
+    grid-column: 3; */
+  }
+  .prev{
+      /*display: grid;
+      grid-row: 2;
+      grid-column: 1;  */
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+.text {
+  color: #ffffcc;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+ }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2c2416;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  display: grid;
+  /*grid-row: 3;
+  grid-column: 2;*/
+}
+
+.active, .dot:hover {
+  background-color: #ffffcc;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} 
+
 #aboutMe{
     background: #2c2416;
      color: #ffffcc;
@@ -160,8 +236,7 @@ grid-column: 1;
     margin: 10%;
     margin-top: 5%;
     grid-column: 1;
-    border-radius: 8px;
-      
+    border-radius: 8px;      
 }
 #bio{
     margin-top: 23%;
@@ -171,7 +246,7 @@ grid-column: 1;
     margin-bottom: 0%;
     margin-left: 7%;
 }
-section2AboutMe{
+#section2AboutMe{
     display: grid;
     grid-column: 2;
     margin: 5%;
@@ -214,7 +289,4 @@ footer{
     padding: 1em 0;
     text-align: center;
     color: #ffffcc;
-
-    
-    
 }

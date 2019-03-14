@@ -7,62 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Spectral" rel="stylesheet">
 </head>
 <body>
-<body background ="images\Vista-Forest-Tour-868715.jpg" alt="Forest">
+        <nav>
+                <h1 id="name">Sabrina Andrew</h1>
+                <a href="#myProjects">My Latest Work</a>
+                <a href="#aboutMe">About Sabrina</a>
+                    <a href="#getInTouch">Get in Touch</a>
+            </nav>
+<body background ="images\Vista-Forest-Tour-868715.jpg" alt="Forest"></body>
        
     <header>
      <section id= "sectionSpan"><span>Junior Full Stack Software Developer</span>
         <p>Looking forward to working in the world of tech. Experienced in working with people from a diverse backgrounds and cultures, determined to complete challenging tasks, committed to creatively solving complex problems.</p></section>
 </header>
 <main>
-         <div>
-    <h2 id = "myProjects">My Latest Work</h2>
-                 <div id ="projects">
-                <article>
-                    <h3>Virtual Pets Amok</h3>
-                    <a href = "https://github.com/sabrina-andrew/Sabrina-s-Copy-of-Virtual-Pets-Amok" target="_blank"><img src=images\virtualPetsAmok.jpg></a>
-                    <p>Virtual Pets Amok is a user input console style application. This is my first team project.  We used C#, Git and Github.</p>
-            </article>
-            <article>
-                <h3>Project B</h3>
-                <img src=>
-                <p>Blah Blah Blah Blah Blah</p>
-            </article>
-            <article>
-                <h3>Project C</h3>
-                <image src=>
-                    <p>Blah Blah Blah Blah Blah</p>
-            </article>
-            </div></div>
-                <section id ="aboutMe">
-        <section id = "section1AboutMe"><h2>About Sabrina</h2>
+
+       
+<section id = "slideshow-container">
+    <h2>My Latest Work</h2>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <div class="mySlides fade">
+        <h3>Virtual Pets Amok</h3>
+        <div class="numbertext">1 / 3</div>
+        <a href = "https://github.com/sabrina-andrew/Sabrina-s-Copy-of-Virtual-Pets-Amok" target="_blank"><img src=images\virtualPetsAmok.jpg></a>
+        <div class="text">This is the first team project.  Virtual Pets Amok is a user input console style application.  Our team used C#, Git and Github.</div>
+    </div>
+    <div class="mySlides fade">
+        <h3>Personal Portfolio</h3>
+        <div class="numbertext">2 / 3</div>
+        <a href = "https://github.com/sabrina-andrew/sabrina-andrew.github.io"
+        target="_blank"><img src=images\PortfolioGithubScreenshot.jpg></a>
+        <div class="text">This portfolio is one of the projects started in bootcamp.  The technologies used are HTML5, CSS3, Javascript, Git and Github.</div>
+    </div>
+    <div class="mySlides fade">           
+        <h3>Movie Review Site</h3>
+        <div class="numbertext"> 3 / 3</div>
+        <a href = "https://github.com/sabrina-andrew/DisneyMovieReviewSite"
+        target="_blank"><img src=images\MovieReviewSite.jpg></a>
+        <div class = "text">This project is the second team project. We created a movie review website.</div>
+    </div>
+    
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>   
+</section>
+
+<section id ="aboutMe">
+    <section id = "section1AboutMe"><h2>About Sabrina</h2>
         <img src="images\CroppedSepia.jpg" alt="Sarina Andrew"></section>
-<section id = "section2AboutMe"><p id ="bio">She has enjoyed putting her creativity to work in the technical world of coding since 2018.</p>
- <h4>Tech Stack </h4>
-      <p>  C# • .NET • Active Server Pages / ASP.net • JavaScript • JQuery • Flexbox • MVC • HTML5 • CSS3 • Grid • Bootstrap • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub
- </p></section></section>
-    
-    
-    <section id ="getInTouch">
-        <h2>How you can get in touch with me:</h2>
-         <ul>
+        <section id = "section2AboutMe">
+            <p id ="bio">She has enjoyed putting her creativity to work in the technical world of coding since 2018.</p>
+            <h4>Tech Stack </h4>
+            <p>  C# • .NET • Active Server Pages / ASP.net • JavaScript • JQuery • Flexbox • MVC • HTML5 • CSS3 • Grid • Bootstrap • TDD • Agile (Scrum) • Object Oriented Programming (OOP) • AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured Query Language (SQL) • Relational Databases / MS SQL • Source Control / GitHub</p>
+        </section>
+    </section>
+    <section id="getInTouch">
+        <h2>How you can get in touch:</h2>
+        <ul>
             <li>Email:  sabrina.rae.andrew@gmail.com</li>
             <li>Phone:  440-265-0257</li>
             
             <a href= "https://github.com/sabrina-andrew"target="_blank"<i class="fab fa-github"></i></a>
-            <a href= "https://www.linkedin.com/in/sabrina-andrew/"target="_blank"<i class="fab fa-linkedin"></i></a>
-            </ul>
+            <a href= "https://www.linkedin.com/in/sabrina-andrew/"target="_blank"<i class="fab fa-linkedin"><i><a>
+        </ul>
     </section>
 </main>
-<nav>
-    <h1 id="name">Sabrina Andrew</h1>
-    <a href="#myProjects">My Latest Work</a>
-    <a href="#aboutMe">About Sabrina</a>
-        <a href="#getInTouch">Get in Touch</a>
-</nav>
+<script src="portfolio.js"></script>
 <footer>
     &copy; 2019 Sabrina Andrew Portfolio
 </footer>
