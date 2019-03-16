@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   color: #ffffcc;
+  overflow: auto;
 }
 body {
   min-height: 100%;
@@ -19,6 +20,7 @@ main,
 footer {
   margin: 0 auto;
   max-width: 800px;
+  overflow: hidden;
 }
 header {
   padding: 1em;
@@ -150,6 +152,7 @@ word-wrap: none;
   margin: 3% auto; /* 3% from the top and centered */
   padding: 20px;
   max-width: 80%;
+  overflow: auto;
 }
 
 /* The Close Button */
