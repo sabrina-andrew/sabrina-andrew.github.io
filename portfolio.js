@@ -26,7 +26,7 @@ function showSlides(n) {
 } 
 
 // Collapsible description
-var coll = document.getElementsByClassName("collapsible");
+const coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -106,7 +106,7 @@ hamburger.onclick = () => {
       link.style.margin = "0";
       link.style.alignSelf = "center";
     });
-
+     
     myName.style.gridColumn = "1 / span 2";
 
     hamburger.style.justifySelf = "right";

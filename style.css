@@ -149,8 +149,9 @@ word-wrap: none;
   grid-template-columns: 350px 350px;
   grid-column-gap: 1em;
   width: 750px;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 3% auto; /* 15% from the top and centered */
   padding: 20px;
+  max-width: 80%;
 }
 
 /* The Close Button */
