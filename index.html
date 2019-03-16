@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -14,14 +15,15 @@
 </head>
 <body background ="images\Vista-Forest-Tour-868715.jpg" alt="Forest">
     
-    <div class="topnav" id="myTopnav">
+    <nav class="topnav" id="myTopnav">
         <h1 class="name">Sabrina Andrew</h1>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
               </a>
-        <button id="myBtn">About Sabrina</button>
-        <a href="#myProjects">My Latest Work</a>
         <a href="#getInTouch">Get in Touch</a>
-    </div>
+        <a href="#work">My Latest Work</a>  
+        <button id="myBtn">About Sabrina</button>
+    </nav>
 
 <header>
         <div id ="myModal" class="modal">
@@ -43,7 +45,7 @@
 
 <main>
 
-<section class = "slideshow-container">
+
     <h2 class="work">My Latest Work</h2>
     <div class="slides">
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -83,7 +85,7 @@
     </div>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div> 
-</section>
+
 
    <section class="getInTouch">
         <h2>How you can get in touch:</h2>
