@@ -32,10 +32,26 @@
         grid-row: 1;
         grid-column: 3;
         padding-right: 20px;
-    }
-
-
+    }    
 }
+
+@media only screen and (max-width: 936px){
+    /* .modal{
+        grid-template-rows: 2fr;
+        grid-template-areas:
+        "modal-content";
+    } */
+    .modal-content{
+        grid-template-rows: 4fr;
+        grid-template-areas:
+        "close"
+        "h2"
+        "img"
+        "section2AboutMe";
+    }
+}
+
+
 
  
 

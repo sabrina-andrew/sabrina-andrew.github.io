@@ -72,6 +72,7 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 const links = document.querySelectorAll('.link');
 const myName = document.querySelector('.name');
+
 let click = false;
 hamburger.onclick = () => {
   if(click){
@@ -80,6 +81,7 @@ hamburger.onclick = () => {
     nav.style.gridTemplateColumns = "1fr 100px";
     nav.style.gridTemplateRows = "1fr";
     nav.style.maxHeight = "1000px";
+    
 
     links.forEach( link => {
       link.style.display = "none";

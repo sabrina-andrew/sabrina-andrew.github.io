@@ -25,8 +25,7 @@ header {
   margin-top: 25px;
 }
 html {
-  font-size: 16px;
-  
+  font-size: 16px;  
   scroll-behavior: smooth;
 }
 h1,
@@ -88,8 +87,7 @@ header span {
   color: #ffffcc;
   text-decoration: none;
   padding: 1em;
-  font-size: 1.5em;
-  /* float: right; */
+  font-size: 1.5em;  
   transition: all 0.2s ease-in-out;
 }
 .topnav .icon {
@@ -149,7 +147,7 @@ word-wrap: none;
   grid-template-columns: 350px 350px;
   grid-column-gap: 1em;
   width: 750px;
-  margin: 3% auto; /* 15% from the top and centered */
+  margin: 3% auto; /* 3% from the top and centered */
   padding: 20px;
   max-width: 80%;
 }
@@ -357,14 +355,31 @@ section p {
 
 .fab {
   font-size: 35px;
-  padding: 0;
+  padding: 1rem;
   margin: 0;
   padding-right: 10px;
+ 
+  
 }
+.fab:hover {
+    transition: 0.9s;
+    transform: rotateY(180deg);
+    
+}
+
+
 
 footer {
   background: #2c2416;
-  padding: 1em 0;
+  /* padding: 1em 0; */
   text-align: center;
   color: #ffffcc;
+
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  height: 3rem;
+  font-size: 2rem;
+
+
 }
