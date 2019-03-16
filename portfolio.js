@@ -51,9 +51,9 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -67,13 +67,51 @@ window.onclick = function(event) {
   }
 }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+const links = document.querySelectorAll('.link');
+const myName = document.querySelector('.name');
+let click = false;
+hamburger.onclick = () => {
+  if(click){
+    click = false;
+    btn.style.display = "none";
+    nav.style.gridTemplateColumns = "1fr 100px";
+    nav.style.gridTemplateRows = "1fr";
+    nav.style.maxHeight = "1000px";
+
+    links.forEach( link => {
+      link.style.display = "none";
+    });
+    myName.style.gridColumn = "1";    
   }
-}
+  else {
+    click = true;
+    btn.style.display = "block";
+    btn.style.fontSize = "1em";
+    btn.style.padding = "0";
+    btn.style.margin = "0";
+    btn.style.alignSelf = "center";
+    btn.style.backgroundColor = "#00000000";
+
+    nav.style.gridTemplateColumns = "1fr 1fr 1fr";
+    nav.style.gridTemplateRows = "60px 60px";
+    nav.style.maxHeight = "1000px";
+
+    links.forEach( link => {
+      link.style.display = "block";
+      link.style.fontSize = "1em";
+      link.style.padding = "0";
+      link.style.margin = "0";
+      link.style.alignSelf = "center";
+    });
+
+    myName.style.gridColumn = "1 / span 2";
+
+    hamburger.style.justifySelf = "right";
+  }
+
+  
+};
 

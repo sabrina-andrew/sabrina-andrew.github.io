@@ -75,7 +75,8 @@ header span {
   max-height: 5rem;
   background: #601407;
   overflow: hidden;
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 240px);
 }
 
 .topnav a:hover {
@@ -88,11 +89,15 @@ header span {
   text-decoration: none;
   padding: 1em;
   font-size: 1.5em;
-  float: right;
+  /* float: right; */
   transition: all 0.2s ease-in-out;
 }
 .topnav .icon {
   display: none;
+}
+
+.hamburger{
+    display: none;
 }
 
 /*My name in nav bar*/
@@ -101,7 +106,8 @@ header span {
   font-size: 3rem;
   color: #ffffcc;
   background: #601407;
-  float: left;
+  /* float: left; */
+word-wrap: none;
 }
 
 /*Button for modal box*/
@@ -237,7 +243,7 @@ section p {
   margin-left: auto;
   margin-right: auto;
 }
-}
+
 
 .mySlides {
   display: none;
