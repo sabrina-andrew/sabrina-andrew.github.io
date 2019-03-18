@@ -35,21 +35,10 @@
     }    
 }
 
-@media only screen and (max-width: 936px){
-    /* .modal{
-        grid-template-rows: 2fr;
-        grid-template-areas:
-        "modal-content";
-    } */
-    .modal-content{
-        grid-template-rows: 4fr;
-        grid-template-areas:
-        "close"
-        "h2"
-        "img"
-        "section2AboutMe";
-    }
+@media only screen and (max-width: 960px){
+    .modal-content
 }
+
 
 
 

@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   color: #ffffcc;
-  
 }
 body {
   min-height: 100%;
@@ -20,7 +19,6 @@ main,
 footer {
   margin: 0 auto;
   max-width: 800px;
-  
 }
 header {
   padding: 1em;
@@ -74,7 +72,8 @@ header span {
   left: 0;
   width: 100%;
   max-height: 5rem;
-  background: #601407;  
+  background: #601407;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr repeat(3, 240px);
 }
@@ -151,7 +150,6 @@ word-wrap: none;
   margin: 3% auto; /* 3% from the top and centered */
   padding: 20px;
   max-width: 80%;
- 
 }
 
 /* The Close Button */
@@ -329,7 +327,7 @@ section p {
   margin: 0px;
   padding: 0 18px;
   display: none;
-  
+  overflow: hidden;
 }
 
 .content p {
@@ -366,11 +364,7 @@ section p {
 .fab:hover {
     transition: 0.9s;
     transform: rotateY(180deg);
-    
 }
-
-
-
 footer {
   background: #2c2416;
   /* padding: 1em 0; */
@@ -382,6 +376,4 @@ footer {
   bottom: 0;
   height: 3rem;
   font-size: 2rem;
-
-
 }
