@@ -1,7 +1,9 @@
 @media screen and (max-width: 1060px){
     .hamburger{
         display: block; 
-        align-self: center;   
+        -ms-flex-item-align: center; 
+            -ms-grid-row-align: center; 
+            align-self: center
     }
 
     .link{
@@ -13,6 +15,7 @@
     }
 
     .topnav {
+        -ms-grid-columns: 1fr 100px;
         grid-template-columns: 1fr 100px;
     }
 }
@@ -23,24 +26,40 @@
     }
 
     .topnav {
+        -ms-grid-columns: 1fr 100px;
         grid-template-columns: 1fr 100px;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
 
     }
 
+    .topnav > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    
+        }
+    
+        .topnav > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    
+        }
+
     .hamburger{
+        -ms-grid-row: 1;
         grid-row: 1;
+        -ms-grid-column: 3;
         grid-column: 3;
         padding-right: 20px;
     }    
 }
 
-@media only screen and (max-width: 936px){
-    /* .modal{
+/* @media only screen and (max-width: 936px){
+    .modal{
         grid-template-rows: 2fr;
         grid-template-areas:
         "modal-content";
-    } */
+    }
     .modal-content{
         grid-template-rows: 4fr;
         grid-template-areas:
@@ -49,7 +68,7 @@
         "img"
         "section2AboutMe";
     }
-}
+} */
 
 
 

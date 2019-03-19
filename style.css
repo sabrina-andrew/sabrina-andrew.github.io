@@ -46,11 +46,15 @@ h1 {
 
 /* Title to blurb about me*/
 header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 1.5em;
   padding-left: 1em;
   padding-bottom: 0.75em;
-  flex-grow: 2;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 /*Background to blurb about me*/
 .sectionSpan {
@@ -73,15 +77,19 @@ header span {
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 5rem;
+  font-size: 1rem;
   background: #601407;  
+  display: -ms-grid;  
   display: grid;
+  -ms-grid-columns: 1fr (240px)[3];
   grid-template-columns: 1fr repeat(3, 240px);
 }
 
 .topnav a:hover {
   opacity: 0.25;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .topnav a {
@@ -89,6 +97,8 @@ header span {
   text-decoration: none;
   padding: 1em;
   font-size: 1.5em;  
+  -webkit-transition: all 0.2s ease-in-out;  
+  -o-transition: all 0.2s ease-in-out;  
   transition: all 0.2s ease-in-out;
 }
 .topnav .icon {
@@ -106,16 +116,17 @@ header span {
   color: #ffffcc;
   background: #601407;
   /* float: left; */
-word-wrap: none;
+  word-wrap: none;
 }
 
 /*Button for modal box*/
 #myBtn {
   padding-top: 10px;
   color: #ffffcc;
-  background: #601407;
-  height: 5rem;
+  background: #601407;  
   font-size: 1.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   border: none;
   float: right;
@@ -123,7 +134,9 @@ word-wrap: none;
 
 #myBtn:hover {
   opacity: 0.25;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 /* The Modal (background) */
@@ -145,6 +158,7 @@ word-wrap: none;
   background: #2c2416;
   color: #ffffcc;
   display: grid;
+  -ms-grid-columns: 350px 1em 350px;
   grid-template-columns: 350px 350px;
   grid-column-gap: 1em;
   width: 750px;
@@ -160,9 +174,13 @@ word-wrap: none;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-column: 2;
   grid-column: 2;
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   margin-right: 20px;
 }
 
@@ -175,17 +193,21 @@ word-wrap: none;
 
 /*My picture*/
 .modal-content img {
+  display: -ms-grid;
   display: grid;
   width: 300px;
   height: auto;
   margin: 10%;
   margin-top: 5%;
+  -ms-grid-column: 1;
   grid-column: 1;
   border-radius: 8px;
 }
 
 .section2AboutMe {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-column: 2;
   grid-column: 2;
   margin: 5%;
   margin-top: 0px;
@@ -221,7 +243,9 @@ section p {
 
  
 .mySlides.fade {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding: 1em;
   max-width: 500px;
@@ -236,9 +260,13 @@ section p {
 }
 
 .slides {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 50px 500px 50px;
   grid-template-columns: 50px 500px 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #2c2416;
   max-width: 600px;
   margin-left: auto;
@@ -268,9 +296,14 @@ section p {
   color: #ffffcc;
   font-weight: bold;
   font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .next {
   right: 0;
@@ -318,6 +351,8 @@ section p {
   text-align: center;
   outline: none;
   font-size: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
@@ -339,7 +374,9 @@ section p {
 .active,
 .collapsible:hover {
   background-color: ffffcc;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+        transform: scale(1.05);
 }
 
 .getInTouch {
@@ -364,9 +401,11 @@ section p {
   
 }
 .fab:hover {
-    transition: 0.9s;
-    transform: rotateY(180deg);
-    
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);    
 }
 
 
