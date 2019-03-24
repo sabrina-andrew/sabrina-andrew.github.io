@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   color: #ffffcc;
-  
 }
 body {
   min-height: 100%;
@@ -20,14 +19,13 @@ main,
 footer {
   margin: 0 auto;
   max-width: 800px;
-  
 }
 header {
   padding: 1em;
   margin-top: 25px;
 }
 html {
-  font-size: 16px;  
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 h1,
@@ -53,8 +51,8 @@ header span {
   padding-left: 1em;
   padding-bottom: 0.75em;
   -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
 }
 /*Background to blurb about me*/
 .sectionSpan {
@@ -78,35 +76,35 @@ header span {
   left: 0;
   width: 100%;
   font-size: 1rem;
-  background: #601407;  
-  display: -ms-grid;  
+  background: #601407;
+  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr (240px)[3];
+  -ms-grid-columns: 1fr (240px) [3];
   grid-template-columns: 1fr repeat(3, 240px);
 }
 
 .topnav a:hover {
   opacity: 0.25;
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .topnav a {
   color: #ffffcc;
   text-decoration: none;
   padding: 1em;
-  font-size: 1.5em;  
-  -webkit-transition: all 0.2s ease-in-out;  
-  -o-transition: all 0.2s ease-in-out;  
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .topnav .icon {
   display: none;
 }
 
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 
 /*My name in nav bar*/
@@ -123,7 +121,7 @@ header span {
 #myBtn {
   padding-top: 10px;
   color: #ffffcc;
-  background: #601407;  
+  background: #601407;
   font-size: 1.5em;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -135,8 +133,8 @@ header span {
 #myBtn:hover {
   opacity: 0.25;
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-        transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* The Modal (background) */
@@ -165,7 +163,6 @@ header span {
   margin: 3% auto; /* 3% from the top and centered */
   padding: 20px;
   max-width: 80%;
- 
 }
 
 /* The Close Button */
@@ -179,8 +176,8 @@ header span {
   -ms-grid-column: 2;
   grid-column: 2;
   -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -ms-flex-pack: right;
+  justify-content: right;
   margin-right: 20px;
 }
 
@@ -224,25 +221,43 @@ section {
 section p {
   margin: 1em 0;
 }
-#before-work{
-    display: block;
-    content: "";
-    margin-top: 75px;
-    height: 75px;
-    visibility: hidden;
+#before-work {
+  display: block;
+  content: "";
+  margin-top: 75px;
+  height: 75px;
+  visibility: hidden;
+}
+
+.slides {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 500px 50px;
+  grid-template-columns: 50px 500px 50px;
+  grid-template-areas:
+    "work work work"
+    "prev mySlidesFade next";
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #2c2416;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work {
-  padding-left: 2rem;
-  width: 600px;
-  padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  
+  grid-area: work;
+
+  padding: 0;
+  /* padding-left: 2rem;
+  max-width: 600px;
+  padding-top: 10px;*/
 }
 
- 
 .mySlides.fade {
+  grid-area: mySlidesFade;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
@@ -258,21 +273,6 @@ section p {
   border: 3px solid #ffffcc;
   display: inline-block;
 }
-
-.slides {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50px 500px 50px;
-  grid-template-columns: 50px 500px 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #2c2416;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .mySlides {
   display: none;
@@ -301,13 +301,17 @@ section p {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .next {
+  grid-area: next;
   right: 0;
   border-radius: 3px 0 0 3px;
+}
+.prev {
+  grid-area: prev;
 }
 
 .prev:hover,
@@ -364,7 +368,6 @@ section p {
   margin: 0px;
   padding: 0 18px;
   display: none;
-  
 }
 
 .content p {
@@ -375,8 +378,8 @@ section p {
 .collapsible:hover {
   background-color: ffffcc;
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-        transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .getInTouch {
@@ -397,18 +400,14 @@ section p {
   padding: 1rem;
   margin: 0;
   padding-right: 10px;
- 
-  
 }
 .fab:hover {
   -webkit-transition: 0.9s;
   -o-transition: 0.9s;
   transition: 0.9s;
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);    
+  transform: rotateY(180deg);
 }
-
-
 
 footer {
   background: #2c2416;
@@ -421,6 +420,4 @@ footer {
   bottom: 0;
   height: 3rem;
   font-size: 2rem;
-
-
 }
