@@ -6,6 +6,7 @@
   padding: 0;
   color: #ffffcc;
 }
+
 body {
   min-height: 100%;
   background-repeat: no-repeat;
@@ -14,33 +15,105 @@ body {
   background-size: cover;
   font-size: 17px;
 }
-header,
+
 main,
+section,
 footer {
   margin: 0 auto;
   max-width: 800px;
 }
-header {
-  padding: 1em;
-  margin-top: 25px;
-}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
 h1,
 h2,
 h3 {
   color: #ffffcc;
-  background: #2c2416;
+  /* background: #2c2416; */
 }
-header {
-  margin-top: 3em;
-  font-size: 1em;
-}
+
 h1 {
   font-size: 3em;
 }
+
+
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;  
+  background: #601407;
+}
+
+#header .hamburger {
+  display: none;
+}
+
+/*My name in nav bar*/
+#logo {
+  padding-left: 2rem;
+  font-size: 1rem;
+  color: #ffffcc;
+  word-wrap: none;
+}
+
+nav {
+  font-size: 1rem;
+  display: -ms-grid;
+  display: grid; 
+  grid-template-columns: repeat(3, 240px);
+  justify-self: end;
+}
+
+nav .navchild {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+nav .navchild a {
+  color: #ffffcc;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav .navchild a:hover {
+  opacity: 0.25;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+nav .navchild .icon {
+  display: none;
+}
+
+/*Button for modal box*/
+#myBtn {  
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+#myBtn:hover {
+  opacity: 0.25;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
+
 
 /* Title to blurb about me*/
 header span {
@@ -71,72 +144,8 @@ header span {
   padding-bottom: 10px;
   margin: 0;
 }
-.topnav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  font-size: 1rem;
-  background: #601407;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr (240px) [3];
-  grid-template-columns: 1fr repeat(3, 240px);
-}
 
-.topnav a:hover {
-  opacity: 0.25;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
 
-.topnav a {
-  color: #ffffcc;
-  text-decoration: none;
-  padding: 1em;
-  font-size: 1.5em;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.topnav .icon {
-  display: none;
-}
-
-.hamburger {
-  display: none;
-}
-
-/*My name in nav bar*/
-.name {
-  padding-left: 2rem;
-  font-size: 3rem;
-  color: #ffffcc;
-  background: #601407;
-  /* float: left; */
-  word-wrap: none;
-}
-
-/*Button for modal box*/
-#myBtn {
-  padding-top: 10px;
-  color: #ffffcc;
-  background: #601407;
-  font-size: 1.5em;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  border: none;
-  float: right;
-}
-
-#myBtn:hover {
-  opacity: 0.25;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-}
 
 /* The Modal (background) */
 .modal {
@@ -215,9 +224,9 @@ header span {
   margin-top: 10%;
 }
 
-section {
+/* section {
   margin: 1em;
-}
+} */
 
 section p {
   margin: 1em 0;
