@@ -80,7 +80,7 @@ header span {
   background: #601407;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr (240px) [3];
+  -ms-grid-columns: 1fr (240px);
   grid-template-columns: 1fr repeat(3, 240px);
 }
 
