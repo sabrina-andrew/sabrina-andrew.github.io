@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #ffffcc;
+  color: #dcdcdc;
 }
 body {
   min-height: 100%;
@@ -31,7 +31,7 @@ html {
 h1,
 h2,
 h3 {
-  color: #ffffcc;
+  color: #dcdcdc;
   background: #000000;
 }
 header {
@@ -60,7 +60,7 @@ header span {
   margin-top: 75px;
   height: auto;
   min-height: 100% !important;
-  color: #ffffcc;
+  color: #dcdcdc;
   padding: 1em;
   display: inline-block;
 }
@@ -92,7 +92,7 @@ header span {
 }
 
 .topnav a {
-  color: #ffffcc;
+  color: #dcdcdc;
   text-decoration: none;
   padding: 1em;
   font-size: 1.5em;
@@ -112,7 +112,7 @@ header span {
 .name {
   padding-left: 2rem;
   font-size: 3rem;
-  color: #ffffcc;
+  color: #dcdcdc;
   background: #000000;
   /* float: left; */
   word-wrap: none;
@@ -121,7 +121,7 @@ header span {
 /*Button for modal box*/
 #myBtn {
   padding-top: 10px;
-  color: #ffffcc;
+  color: #dcdcdc;
   background: #000000;
   font-size: 1.5em;
   -webkit-transition: all 0.2s ease-in-out;
@@ -155,7 +155,7 @@ header span {
 /* Modal Content/Box */
 .modal-content {
   background: #000000;
-  color: #ffffcc;
+  color: #dcdcdc;
   display: grid;
   -ms-grid-columns: 350px 1em 350px;
   grid-template-columns: 350px 350px;
@@ -168,7 +168,7 @@ header span {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #dcdcdc;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -268,7 +268,7 @@ section p {
 }
 
 .slides img {
-  border: 3px solid #ffffcc;
+  border: 3px solid #dcdcdc;
   display: inline-block;
 }
 
@@ -277,7 +277,7 @@ section p {
 }
 
 .numbertext {
-  color: #ffffcc;
+  color: #dcdcdc;
   font-size: 20px;
   margin: 5px;
 }
@@ -291,7 +291,7 @@ section p {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: #ffffcc;
+  color: #dcdcdc;
   font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
@@ -314,7 +314,7 @@ section p {
 
 .prev:hover,
 .next:hover {
-  background-color: #ffffcc;
+  background-color: #dcdcdc;
   opacity: 0.5;
 }
 
@@ -344,7 +344,7 @@ section p {
 }
 
 .collapsible {
-  background-color: #ffffcc;
+  background-color: #dcdcdc;
   color: #000000;
   cursor: pointer;
   padding: 18px;
@@ -359,7 +359,7 @@ section p {
 }
 
 .content {
-  background: #ffffcc;
+  background: #dcdcdc;
   font-size: 20px;
   padding: 8px 12px;
   text-align: center;
@@ -410,7 +410,7 @@ section p {
 footer {
   background: #000000;
   text-align: center;
-  color: #ffffcc;
+  color: #dcdcdc;
   left: 0;
   bottom: 0;
   height: 3rem;
